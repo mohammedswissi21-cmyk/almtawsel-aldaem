@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="no-js" lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> المتواصل الدائم </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .owl-carousel,
+        .owl-carousel .owl-stage-outer,
+        .owl-carousel .owl-stage,
+        .owl-carousel .owl-item {
+            direction: ltr !important;
+            text-align: left !important;
+        }
+
+        /* Fix Bootstrap columns for RTL inside slider */
+        .slider-area .col-xl-6,
+        .slider-area .col-lg-8,
+        .slider-area .col-md-7,
+        .slider-area .col-sm-8 {
+            margin-left: auto !important;
+            margin-right: 0 !important;
+        }
+
+        /* Keep slide content RTL & positioned right */
+        .slide-full-content,
+        .slide-full-content * {
+            direction: rtl !important;
+            text-align: right !important;
+            margin-right: 0 !important;
+            margin-left: auto !important;
+        }
+
+        body, h1, h2, h3, h4, h5, h6, p, a, span, li {
+            text-align: right !important;
+            direction: rtl !important;
+        }
+        .main-menu ul li {
+            float: right !important;
+        }
+        .logo-img{
+            width: 128px;
+            height: 64px;
+        }
+        .slider-area .slide-full {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slider-area .slide-full::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(4px); /* Blur amount */
+            background: rgba(0, 0, 0, 0.35); /* Dark overlay */
+            z-index: 1;
+        }
+        
+        .slide-full-content {
+            position: relative;
+            z-index: 2; /* Make sure text appears above the overlay */
+        }
+
+        .services-caption {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* الأيقونة الأساسية */
+        .services-caption .service-icon i {
+            font-size: 50px; /* يمكن تعديل الحجم */
+            color: #333; /* اللون الأساسي */
+            transition: color 0.3s ease-in-out;
+        }
+        
+        /* نص العنوان الأساسي */
+        .services-caption .service-cap h4 a {
+            color: #333; /* اللون الأساسي للنص */
+            transition: color 0.3s ease-in-out;
+            text-decoration: none; /* إزالة الخط السفلي */
+        }
+        
+        /* عند التحويم على البطاقة كلها */
+        .services-caption:hover .service-icon i,
+        .services-caption:hover .service-cap h4 a {
+            color: #0F82B9;
+        }
+        
+        
+            
+    </style>
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img class="logo-img" src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu black-menu menu-bg-white d-none d-lg-block">
+                                <div class="hamburger hamburger--collapse">
+                                    <div class="hamburger-box">
+                                        <div class="hamburger-inner"></div>
+                                    </div>
+                                </div>
+                                <nav class="hamburger-menu">
+                                    <ul id="navigation">
+                                        <li><a href="index.html">الرئيسية</a></li>
+                                        <li><a href="about.html">من نحن</a></li>
+                                        <li><a href="services.html">خدماتنا</a></li>
+                                        <li><a href="contact.html">اتصل بنا</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+<!-- slider-area start -->
+        <div class="slider-area">
+            <div class="slider-full-active owl-carousel custom-dots">
+
+                <!-- Slide 1 - تجهيز المنشآت -->
+                <div class="slide-full slider-height d-flex align-items-center" style="background-image: url(assets/img/hero/h1_hero.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
+                                <div class="slide-full-content">
+                                    <h1>حلول متكاملة<br> للفنادق والمرافق العامة</h1>
+                                    <p>نقوم بتجهيز الفنادق، المطاعم، المقاهي، والمنتجعات بأعلى معايير الجودة.</p>
+                                    <a class="btn" style="background-color: #0F82B9" href="#">اتصل بنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 - تجهيز المؤسسات التعليمية والصحية -->
+                <div class="slide-full d-flex slider-height align-items-center" style="background-image: url(assets/img/hero/h2_hero.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
+                                <div class="slide-full-content">
+                                    <h1>تجهيز المدارس<br> والجامعات والمستشفيات</h1>
+                                    <p>نوفر كل ما يلزم من تجهيزات طبية، إلكترونية، كهربائية وميكانيكية.</p>
+                                    <a class="btn" style="background-color: #0F82B9" href="#">اتصل بنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 - الاتصالات والشبكات -->
+                <div class="slide-full d-flex slider-height align-items-center" style="background-image: url(assets/img/hero/h3_hero.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
+                                <div class="slide-full-content">
+                                    <h1>مشاريع الاتصالات<br> والبنية التحتية للشبكات</h1>
+                                    <p>نقوم بتركيب وصيانة أبراج الاتصالات وتنفيذ شبكات البنية التحتية المتكاملة.</p>
+                                    <a class="btn" style="background-color: #0F82B9" href="#">اتصل بنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- slider-area end -->
+
+
+        <!-- About Start-->
+        <section class="about-area section-padding2">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Text Updated Here -->
+                    <div class="col-lg-6 col-md-10">
+                        <div class="about-caption mb-50">
+
+                            <div class="section-tittle section-tittle2 mb-35">
+                                <span>نبذة عن الشركة</span>
+                                <h2>شركة المتواصل الدائم للتجهيزات العامة</h2>
+                            </div>
+
+                            <p>
+                                هي شركة ليبية رائدة متخصصة في توريد، تركيب، وتشغيل مختلف أنواع التجهيزات العامة والخاصة. تأسست الشركة بهدف تقديم حلول متكاملة تلبي احتياجات المؤسسات الحكومية، التعليمية، الصحية، والفنادق، إضافة إلى مشاريع الإنشاءات والمقاولات.
+
+                                نحن نعمل بمنهجية تعتمد على الجودة، الاحترافية، والدقة في التنفيذ، مما جعلنا شريكًا موثوقًا للعديد من الجهات في مختلف القطاعات.
+                            </p>
+
+
+                            <a class="btn" style="background-color: #0F82B9" href="#">اتصل بنا</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-img">
+                            <div class="about-font-img">
+                                <img src="assets/img/gallery/about1.png" alt="">
+                            </div>
+                            <div class="about-back-img">
+                                <img src="assets/img/gallery/about2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Area -->
+        <section class="service-area pt-150 pb-150">
+            <div class="service-bg"></div>
+            <div class="container">
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle section-tittle3 text-center mb-90">
+                            <h2>نقدم أفضل الحلول لك</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <!-- بطاقة 1 - تجهيز الفنادق والمرافق -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null"></i>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">تجهيز الفنادق والمرافق العامة</a></h4>
+                                <p>
+                                    نقدم حلولًا متكاملة لتجهيز الفنادق، المطاعم، المقاهي والمنتجعات
+                                    باستخدام أفضل المعدات وتقنيات التشغيل الحديثة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- بطاقة 2 - تجهيز المؤسسات التعليمية والصحية -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption active text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-1"></i>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">تجهيز المؤسسات التعليمية والصحية</a></h4>
+                                <p>
+                                    نوفر جميع التجهيزات الطبية والإلكترونية والكهربائية والميكانيكية
+                                    للمدارس، الجامعات والمستشفيات وفق أعلى المعايير العالمية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- بطاقة 3 - الاتصالات والشبكات -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-2"></i>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">مشاريع الاتصالات والشبكات</a></h4>
+                                <p>
+                                    نقوم بتنفيذ مشاريع الاتصالات وصيانة الأبراج وبناء شبكات البنية التحتية
+                                    مع توفير جميع المعدات والأنظمة المطلوبة لتشغيلها بكفاءة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-area footer-padding section-bg" data-background="assets/img/gallery/footer_bg.png">
+            <div class="container">
+
+                <div class="footer-top">
+                    <div class="row justify-content-between">
+
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+
+                                <div class="single-footer-caption mb-30">
+
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img class="logo-img" src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>روابط سريعة</h4>
+                                    <ul>
+                                        <li><a href="#">من نحن</a></li>
+                                        <li><a href="#">اتصل بنا</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>الدعم</h4>
+                                    <ul>
+                                        <li><a href="#">الشروط والأحكام</a></li>
+                                        <li><a href="#">سياسة الخصوصية</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="row">
+
+                        <div class="col-xl-7 col-lg-8 col-md-7">
+                            <div class="footer-copy-right">
+                                <p>
+                                    جميع الحقوق محفوظة &copy;<script>document.write(new Date().getFullYear());</script> | بواسطة <a href="#" target="_blank" style="color: #0F82B9">المتواصل الدائم</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5 col-lg-4 col-md-5">
+                            <div class="footer-copy-right f-right">
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="back-top" style="background-color: #0F82B9;">
+        <a title="اذهب للأعلى" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/gijgo.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

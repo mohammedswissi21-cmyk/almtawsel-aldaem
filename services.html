@@ -1,0 +1,362 @@
+<!doctype html>
+<html class="no-js" lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> المتواصل الدائم | خدماتنا</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .logo-img{
+            width: 128px;
+            height: 64px;
+        }
+        /* لتطبيق RTL على النصوص والعناصر */
+        body {
+            direction: rtl;
+            text-align: right;
+        }
+        /* تعديلات محددة لعناصر التصميم */
+        .main-header .main-menu nav ul li ul.submenu {
+            left: unset; /* إلغاء خاصية اليسار الافتراضية */
+            right: 0; /* وضع القائمة المنسدلة على اليمين */
+            text-align: right;
+        }
+        .main-header .main-menu nav ul li ul.submenu li a {
+            text-align: right;
+        }
+        .section-tittle {
+            text-align: right;
+        }
+        .section-tittle.text-center {
+            text-align: center !important;
+        }
+        .services-caption, .service-cap {
+             text-align: center !important; /* للحفاظ على توسيط محتوى الخدمات */
+        }
+        .services-caption.active {
+            /* قد تحتاج لتعديل هوامش الظل أو الحواف هنا إذا كانت تعتمد على اتجاه LTR */
+        }
+        .footer-tittle ul {
+            padding-right: 0;
+            list-style: none;
+        }
+        /* تعديل اتجاه الأزرار والروابط في RTL إذا لزم الأمر */
+        .footer-social {
+             text-align: left !important; /* لتبديل مكان أيقونات التواصل الاجتماعي إلى اليسار في حالة كانت على اليمين */
+        }
+        .footer-bottom .footer-copy-right.f-right {
+            text-align: left;
+        }
+        @media (min-width: 992px) {
+            .footer-bottom .f-right {
+                float: left !important; /* عكس التعويم ليناسب RTL */
+            }
+        }
+        .hero-cap2 h2 {
+            font-size: 48px; /* تأكد من حجم الخط للقراءة الجيدة بالعربية */
+        }
+
+
+        .services-caption {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* الأيقونة الأساسية */
+        .services-caption .service-icon i {
+            font-size: 50px; /* يمكن تعديل الحجم */
+            color: #333; /* اللون الأساسي */
+            transition: color 0.3s ease-in-out;
+        }
+        
+        /* نص العنوان الأساسي */
+        .services-caption .service-cap h4 a {
+            color: #333; /* اللون الأساسي للنص */
+            transition: color 0.3s ease-in-out;
+            text-decoration: none; /* إزالة الخط السفلي */
+        }
+        
+        /* عند التحويم على البطاقة كلها */
+        .services-caption:hover .service-icon i,
+        .services-caption:hover .service-cap h4 a {
+            color: #0F82B9;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img class="logo-img" src="assets/img/logo/logo.png" alt="شعار الشركة"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu black-menu menu-bg-white d-none d-lg-block">
+                                <div class="hamburger hamburger--collapse">
+                                    <div class="hamburger-box">
+                                        <div class="hamburger-inner"></div>
+                                    </div>
+                                </div>
+                                <nav class="hamburger-menu">
+                                    <ul id="navigation">
+                                        <li><a href="index.html">الرئيسية</a></li>
+                                        <li><a href="about.html">من نحن</a></li>
+                                        <li><a href="services.html">الخدمات</a></li>
+                                        <li><a href="contact.html">اتصل بنا</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    <main>
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>الخدمات</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="service-area pt-150 pb-150">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle  text-center mb-90">
+                            <span>خدماتنا</span>
+                            <h2>نقدم لك أفضل الحلول </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null"></i>
+                            </div> 
+                            <div class="service-cap">
+                                <h4><a href="#">تجهيز المنشآت العامة والخاصة</a></h4>
+                                <p>يشمل تجهيز الفنادق، المنتجعات، المطاعم، والمقاهي، إضافة إلى تركيب معدات الضيافة والتجهيزات الداخلية والخارجية.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption active text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-1"></i>
+                            </div> 
+                            <div class="service-cap">
+                                <h4><a href="#">تجهيز المؤسسات التعليمية والصحية</a></h4>
+                                <p>تجهيز المدارس والجامعات والمستشفيات والعيادات، مع توفير التجهيزات الطبية، الإلكترونية، الكهربائية، والميكانيكية.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-2"></i>
+                            </div> 
+                            <div class="service-cap">
+                                <h4><a href="#">تجهيز المباني والحدائق وتوريد الأثاث</a></h4>
+                                <p>تجهيز المباني السكنية والتجارية بالأثاث والأجهزة والأنظمة الأمنية، وتركيب منظومات الصوت والإنذار،.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-2"></i>
+                            </div> 
+                            <div class="service-cap">
+                                <h4><a href="#">التوريدات والخدمات المتخصصة</a></h4>
+                                <p>يشمل توريد معدات الفنادق والمطاعم، بيع المستلزمات الرياضية، وتوفير العمالة الفنية والكوادر لمختلف المشاريع.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption active text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-1"></i>
+                            </div> 
+                            <div class="service-cap">
+                                <h4><a href="#">خدمات الاتصالات والبنية التحتية للشبكات</a></h4>
+                                <p>تركيب وصيانة أبراج الاتصالات السلكية واللاسلكية، وتنفيذ مشاريع البنية التحتية الشبكية.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null"></i>
+                            </div> 
+                            <div class="service-cap">
+                                <h4><a href="#">أعمال الديكور والألمنيوم والخشب</a></h4>
+                                <p>تصنيع وتركيب الأبواب والنوافذ والديكورات، بالإضافة إلى أعمال الزجاج والألمنيوم والمواد العازلة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+    <footer>
+
+        <div class="footer-area footer-padding section-bg" data-background="assets/img/gallery/footer_bg.png">
+            <div class="container">
+
+                <div class="footer-top">
+                    <div class="row justify-content-between">
+
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+
+                                <div class="single-footer-caption mb-30">
+
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img class="logo-img" src="assets/img/logo/logo2_footer.png" alt="شعار الشركة"></a>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>روابط سريعة</h4>
+                                    <ul>
+                                        <li><a href="#">من نحن</a></li>
+                                        <li><a href="#">اتصل بنا</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>الدعم</h4>
+                                    <ul>
+                                        <li><a href="#">الشروط والأحكام</a></li>
+                                        <li><a href="#">سياسة الخصوصية</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="row">
+
+                        <div class="col-xl-7 col-lg-8 col-md-7">
+                            <div class="footer-copy-right">
+                                <p>
+                                    جميع الحقوق محفوظة &copy;<script>document.write(new Date().getFullYear());</script> | بواسطة <a href="#" target="_blank" style="color: #0F82B9;">المتواصل الدائم</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5 col-lg-4 col-md-5">
+                            <div class="footer-copy-right f-right">
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <div id="back-top" style="background-color: #0F82B9;">
+        <a title="اذهب للأعلى" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <script src="./assets/js/gijgo.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+    </body>
+</html>
